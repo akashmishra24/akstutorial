@@ -12,13 +12,13 @@ variables:
   dockerRegistryServiceConnection: 'a9efe307-cc83-4e90-9447-32268283c490'
   imageRepository: 'testapi_api'
   imageRepository2: 'mysql'
-  containerRegistry: 'gbengaelebs.azurecr.io'
+  containerRegistry: 'mycr24.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildNumber)'
   mysqltag: '8.0.22'
 
   # Agent VM image name
-  # vmImageName: 'My-Ubuntu-Agent'
+    vmImageName: 'agentpool'
 
 
 stages:
